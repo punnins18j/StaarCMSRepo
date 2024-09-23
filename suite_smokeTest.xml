@@ -15,7 +15,7 @@
 				name="com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest" />
 			<class
 				name="com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest" />
-			<classs
+			<class
 				name="com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest" />
 			<class
 				name="com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest" />
