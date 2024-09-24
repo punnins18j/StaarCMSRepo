@@ -3,6 +3,7 @@ package com.pabb.staarcms.thirdpartytest;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 import com.pabb.staarcms.genericutility.BaseClass;
@@ -35,6 +36,9 @@ public class ListOfThirdPartiesTest extends BaseClass {
 		ThirdPartiesPage tp = new ThirdPartiesPage(driver);
 		ListOfThirdPartiesPage lp = new ListOfThirdPartiesPage(driver);
 		
+		/* create object of soft assert class*/
+		SoftAssert sa = new SoftAssert();
+		
 		UtilityClassObject.getTest().log(Status.INFO, " User is able to open the browser and login to the application");
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to Third-parties major tab");
@@ -45,7 +49,7 @@ public class ListOfThirdPartiesTest extends BaseClass {
 		/* Get page title from excel and validate with assertion */
 		String eTitleTpMajorTab = eLib.getDataFromExcelFile("PageTitles", 1, 1);
 		String aTitleTpMajorTab = driver.getTitle();
-		Assert.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
+		sa.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to List of Third-parties");
 
@@ -55,6 +59,7 @@ public class ListOfThirdPartiesTest extends BaseClass {
 		/* Get page title from excel and validate with assertion */
 		String eTitleList = eLib.getDataFromExcelFile("PageTitles", 4, 1);
 		String aTitleList = driver.getTitle();
-		Assert.assertEquals(aTitleList,eTitleList);	
+		sa.assertEquals(aTitleList,eTitleList);	
+		sa.assertAll();
 	}
 }

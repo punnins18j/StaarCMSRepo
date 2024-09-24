@@ -3,6 +3,7 @@ package com.pabb.staarcms.thirdpartytest;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 import com.pabb.staarcms.genericutility.BaseClass;
@@ -36,6 +37,9 @@ public class VerifyThirdPartyInListTest  extends BaseClass {
 		ThirdPartyDetailsPage tdp = new ThirdPartyDetailsPage(driver);
 		ListOfThirdPartiesPage lp = new ListOfThirdPartiesPage(driver);
 		
+		/* create object of soft assert class*/
+		SoftAssert sa = new SoftAssert();
+		
 		UtilityClassObject.getTest().log(Status.INFO, " User is able to open the browser and login to the application");
 
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to Third-parties page");
@@ -44,7 +48,7 @@ public class VerifyThirdPartyInListTest  extends BaseClass {
 		h.getThirdPartyTab().click();
 		String eTitleTpMajorTab = eLib.getDataFromExcelFile("PageTitles", 1, 1);
 		String aTitleTpMajorTab = driver.getTitle();
-		Assert.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
+		sa.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to New Third-party page and create Third-party");
 
@@ -52,7 +56,7 @@ public class VerifyThirdPartyInListTest  extends BaseClass {
 		tp.getNewThirdPartyLink().click();
 		String eTitleNewTpLink = eLib.getDataFromExcelFile("PageTitles", 2, 1);
 		String aTitleNewTpLink = driver.getTitle();
-		Assert.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
+		sa.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
 		
 		/*create third party with mandatory fields*/
 		
@@ -72,7 +76,7 @@ public class VerifyThirdPartyInListTest  extends BaseClass {
 
 		String eTitleTpDetailsPage = tpName+eLib.getDataFromExcelFile("PageTitles", 3, 1);
 		String aTitleTpDetailsPage = driver.getTitle();
-		Assert.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
+		sa.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to List of all Third-parties");
 
@@ -81,7 +85,7 @@ public class VerifyThirdPartyInListTest  extends BaseClass {
 		
 		String eTitleList = eLib.getDataFromExcelFile("PageTitles", 4, 1);
 		String aTitleList = driver.getTitle();
-		Assert.assertEquals(aTitleList,eTitleList);
+		sa.assertEquals(aTitleList,eTitleList);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Search Third-party in the list");
 
@@ -89,6 +93,8 @@ public class VerifyThirdPartyInListTest  extends BaseClass {
 		lp.searchThirdParty(tpName);
 		
 		String aTpNameInList = lp.getTpNameInList().getText();
-		Assert.assertEquals(tpName, aTpNameInList);
+		sa.assertEquals(tpName, aTpNameInList);
+		
+		sa.assertAll();
 	}
 }

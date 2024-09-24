@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 23 17:56:14 IST 2024</td>
+<td>Started on:</td><td>Tue Sep 24 10:32:00 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29072 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28470 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.pabb.staarcms.commercetest.CreateProposalAndRejectTest.afterMethod()'><b>afterMethod</b><br>Test class: com.pabb.staarcms.commercetest.CreateProposalAndRejectTest<br/>
-<a href="#Output-204078646" onClick='toggleBox("Output-204078646", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest.afterMethod()'><b>afterMethod</b><br>Test class: com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest<br/>
+<a href="#Output-1033850902" onClick='toggleBox("Output-1033850902", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-204078646" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-204078646">
+<a href="#Output-1033850902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1033850902">
 = logout =<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;hideonsmartphone&quot;&gt; could not be scrolled into view
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft&quot;&gt;...&lt;/span&gt; is not clickable at point (1450, 26). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7a4769df-679e-4671-ad77-5da11507d28b, clickElement {id=de67c509-040d-4962-87a5-d82b50327895}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:29908, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 37428, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (7a4769df-679e-4671-ad77-5da11507d28b)] -&gt; xpath: //span[text()=&apos;Logout&apos;]]
-Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72659c4bcac8673da0e836e8a2e992da, clickElement {id=f.B115FC9DC964ECA039097531F683EDFB.d.2A3BCC59D880882C7DBC5FBDC8058261.e.938}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62916/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (72659c4bcac8673da0e836e8a2e992da)] -&gt; xpath: //span[@class=&apos;hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft&apos;]]
+Session ID: 72659c4bcac8673da0e836e8a2e992da
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,7 +112,7 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:108)
+	at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:107)
 	at com.pabb.staarcms.genericutility.BaseClass.afterMethod(BaseClass.java:90)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -146,15 +147,16 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace204078646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace204078646'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;hideonsmartphone&quot;&gt; could not be scrolled into view
+</pre></div><a href='#' onClick='toggleBox("stack-trace1033850902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1033850902'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft&quot;&gt;...&lt;/span&gt; is not clickable at point (1450, 26). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7a4769df-679e-4671-ad77-5da11507d28b, clickElement {id=de67c509-040d-4962-87a5-d82b50327895}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:29908, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 37428, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (7a4769df-679e-4671-ad77-5da11507d28b)] -&gt; xpath: //span[text()=&apos;Logout&apos;]]
-Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72659c4bcac8673da0e836e8a2e992da, clickElement {id=f.B115FC9DC964ECA039097531F683EDFB.d.2A3BCC59D880882C7DBC5FBDC8058261.e.938}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62916/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (72659c4bcac8673da0e836e8a2e992da)] -&gt; xpath: //span[@class=&apos;hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft&apos;]]
+Session ID: 72659c4bcac8673da0e836e8a2e992da
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -174,7 +176,7 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:108)
+	at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:107)
 	at com.pabb.staarcms.genericutility.BaseClass.afterMethod(BaseClass.java:90)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -210,8 +212,8 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06</td></tr>
+<td>1</td>
+<td>com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -222,10 +224,10 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.pabb.staarcms.commercetest.CreateProposalAndRejectTest.afterClass()'><b>afterClass</b><br>Test class: com.pabb.staarcms.commercetest.CreateProposalAndRejectTest</td>
+<td title='com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest.afterClass()'><b>afterClass</b><br>Test class: com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest</td>
 <td></td>
 <td>0</td>
-<td>com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06</td></tr>
+<td>com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -236,13 +238,12 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.pabb.staarcms.commercetest.CreateProposalAndRejectTest.createProposalAndReject()'><b>createProposalAndReject</b><br>Test class: com.pabb.staarcms.commercetest.CreateProposalAndRejectTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.pabb.staarcms.commercetest.CreateProposalAndRejectTest.createProposalAndReject(CreateProposalAndRejectTest.java:144)
+<td title='com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest.createShipmentAndModifyTest()'><b>createShipmentAndModifyTest</b><br>Test class: com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest.createShipmentAndModifyTest(CreateShipmentAndModifyTest.java:303)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -271,13 +272,12 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1700397528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1700397528'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.pabb.staarcms.commercetest.CreateProposalAndRejectTest.createProposalAndReject(CreateProposalAndRejectTest.java:144)
+</pre></div><a href='#' onClick='toggleBox("stack-trace944826636", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace944826636'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest.createShipmentAndModifyTest(CreateShipmentAndModifyTest.java:303)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -307,8 +307,8 @@ Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>23</td>
-<td>com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06</td></tr>
+<td>22</td>
+<td>com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06</td></tr>
 </table><p>
 </body>
 </html>

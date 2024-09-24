@@ -3,6 +3,7 @@ package com.pabb.staarcms.thirdpartytest;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 import com.pabb.staarcms.genericutility.BaseClass;
@@ -37,6 +38,9 @@ public class CreateThirdPartyAsCustomerSmokeTest extends BaseClass {
 		NewThirdPartyPage ntp = new NewThirdPartyPage(driver);
 		ThirdPartyDetailsPage tdp = new ThirdPartyDetailsPage(driver);
 		
+		/* create object of soft assert class*/
+		SoftAssert sa = new SoftAssert();
+		
 		UtilityClassObject.getTest().log(Status.INFO, "User is able to open the browser and login to the application ");
 		/*click on Third-parties major tab */
 		h.getThirdPartyTab().click();
@@ -44,7 +48,7 @@ public class CreateThirdPartyAsCustomerSmokeTest extends BaseClass {
 		/* Get page title from excel to validate with Assertion */
 		String eTitleTpMajorTab = eLib.getDataFromExcelFile("PageTitles", 1, 1);
 		String aTitleTpMajorTab = driver.getTitle();
-		Assert.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
+		sa.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to New Third Party Page");
 
@@ -54,7 +58,7 @@ public class CreateThirdPartyAsCustomerSmokeTest extends BaseClass {
 		/* Get page title from excel to validate with Assertion */
 		String eTitleNewTpLink = eLib.getDataFromExcelFile("PageTitles", 2, 1);
 		String aTitleNewTpLink = driver.getTitle();
-		Assert.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
+		sa.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Create Third-party as Customer  with mandatory fields");
 
@@ -72,9 +76,9 @@ public class CreateThirdPartyAsCustomerSmokeTest extends BaseClass {
 		/* Get page title from excel file to validate with Assertion */
 		String eTitleTpDetailsPage = tpName+eLib.getDataFromExcelFile("PageTitles", 3, 1);
 		String aTitleTpDetailsPage = driver.getTitle();
-		Assert.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
+		sa.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Third-party created successfully");
-
+		sa.assertAll();
 	}
 }

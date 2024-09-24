@@ -3,6 +3,7 @@ package com.pabb.staarcms.commercetest;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 import com.pabb.staarcms.genericutility.BaseClass;
@@ -41,6 +42,9 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		NewOrderPage nop = new NewOrderPage(driver);
 		OrderDetailsPage odp = new OrderDetailsPage(driver);
 		
+		/* create object of soft assert class*/
+		SoftAssert sa = new SoftAssert();
+		
 		UtilityClassObject.getTest().log(Status.INFO, " User is able to open the browser and login to the application");
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Create Third-party as in Pre-condition");
@@ -49,13 +53,13 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		h.getThirdPartyTab().click();
 		String eTitleTpMajorTab = eLib.getDataFromExcelFile("PageTitles", 1, 1);
 		String aTitleTpMajorTab = driver.getTitle();
-		Assert.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
+		sa.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
 		
 		/*click on New Third Party link*/
 		tp.getNewThirdPartyLink().click();
 		String eTitleNewTpLink = eLib.getDataFromExcelFile("PageTitles", 2, 1);
 		String aTitleNewTpLink = driver.getTitle();
-		Assert.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
+		sa.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
 		
 		/*create third party with mandatory fields*/
 		
@@ -73,7 +77,7 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		
 		String eTitleTpDetailsPage = tpName+eLib.getDataFromExcelFile("PageTitles", 3, 1);
 		String aTitleTpDetailsPage = driver.getTitle();
-		Assert.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
+		sa.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Third-party created successfully");
 
@@ -85,7 +89,7 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		/*Get page title of commerce area page from excel and validate with Assertion*/
 		String eTitleCommerceMajorTab = eLib.getDataFromExcelFile("PageTitles", 7, 1);
 		String aTitleCommerceMajorTab = driver.getTitle();
-		Assert.assertEquals(aTitleCommerceMajorTab, eTitleCommerceMajorTab);
+		sa.assertEquals(aTitleCommerceMajorTab, eTitleCommerceMajorTab);
 		
 		/* Click on New proposal link */
 		cap.getNewProposalLink().click();
@@ -93,7 +97,7 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		/*Get page title of new Proposal page from excel and validate with Assertion*/
 		String eTitleNewProposalPage = eLib.getDataFromExcelFile("PageTitles", 8, 1);
 		String aTitleNewProposalPage = driver.getTitle();
-		Assert.assertEquals(aTitleNewProposalPage, eTitleNewProposalPage);
+		sa.assertEquals(aTitleNewProposalPage, eTitleNewProposalPage);
 		
 		/* create new proposal*/
 		ncp.createNewProposal(tpName);
@@ -108,8 +112,8 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		/*Get page title of Proposal details page from excel and validate with Assertion*/
 		String eTitleProposalDetailsPage = refID+eLib.getDataFromExcelFile("PageTitles", 10, 1);
 		String aTitleProposalDetailsPage = driver.getTitle();
-		Assert.assertEquals(aTitleProposalDetailsPage, eTitleProposalDetailsPage);
-		Assert.assertTrue(pd.getDraftText().isDisplayed());
+		sa.assertEquals(aTitleProposalDetailsPage, eTitleProposalDetailsPage);
+		sa.assertTrue(pd.getDraftText().isDisplayed());
 		
 		/* get data from excel file*/
 		String propType = eLib.getDataFromExcelFile("Proposals", 1, 0);
@@ -124,19 +128,19 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		pd.addProduct(propType,propName,unitPrice,qty,discount);
 		
 		/* Verify validate button displayed or not */
-		Assert.assertTrue(pd.getValidateBtn().isDisplayed());
+		sa.assertTrue(pd.getValidateBtn().isDisplayed());
 		
 		/* validate proposal */
 		pd.getValidateBtn().click();
 		
 		/* Verify confirmation message is displayed or not */
-		Assert.assertTrue(pd.getConfirmationBoxText().isDisplayed());
+		sa.assertTrue(pd.getConfirmationBoxText().isDisplayed());
 		
 		/* Click on Yes in the confirmation box*/
 		pd.getValidateConfirmBtn().click();
 		
 		/* Verify the Validated Text on the page */
-		Assert.assertTrue(pd.getValidateText().isDisplayed());
+		sa.assertTrue(pd.getValidateText().isDisplayed());
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Proposal created and validated successfully");
 
@@ -146,7 +150,7 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		pd.getSetAcceptedOrRefusedBtn().click();
 		
 		/* Verify Set Accepted/Refused Confirm box is displayed or not*/
-		Assert.assertTrue(pd.getSetStatusSelBx().isDisplayed());
+		sa.assertTrue(pd.getSetStatusSelBx().isDisplayed());
 		
 		/* Select Signed and Click on Yes*/
 		/* Get the status from excel file*/
@@ -155,7 +159,7 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		pd.handleConfirmation(status,note);
 		
 		/*Verify the Proposal for Signed or not*/
-		Assert.assertTrue(pd.getSignedText().isDisplayed());
+		sa.assertTrue(pd.getSignedText().isDisplayed());
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Create a New Sales order and validate");
 
@@ -164,27 +168,27 @@ public class CreateSalesOrderAndValidateTest extends BaseClass {
 		/*Get page title of New Order page from excel and validate with Assertion*/
 		String eTitleNewOrderPage = eLib.getDataFromExcelFile("PageTitles", 11, 1);
 		String aTitleNewOrderPage = driver.getTitle();
-		Assert.assertEquals(aTitleNewOrderPage, eTitleNewOrderPage);
+		sa.assertEquals(aTitleNewOrderPage, eTitleNewOrderPage);
 		
 		/* Click on Create Draft Button*/
 		nop.getCreateDraftBtn().click();
 		
 		/* Verift order details page is displayed or not with draft status*/
-		Assert.assertTrue(odp.getDraftText().isDisplayed());
+		sa.assertTrue(odp.getDraftText().isDisplayed());
 		
 		/* Click on Validate button*/
 		odp.getValidateBtn().click();
 		
 		/* verify confirmation box is displayed or not*/
-		Assert.assertTrue(odp.getValidateConfirmationBox().isDisplayed());
+		sa.assertTrue(odp.getValidateConfirmationBox().isDisplayed());
 		
 		/*Click on yes button*/
 		odp.getYesBtn().click();
 		
 		/* verify sales order is validated or not and Assert*/
-		Assert.assertTrue(odp.getValidatedText().isDisplayed());
+		sa.assertTrue(odp.getValidatedText().isDisplayed());
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Sales order created and validated successfully");
-
+		sa.assertAll();
 	}
 }

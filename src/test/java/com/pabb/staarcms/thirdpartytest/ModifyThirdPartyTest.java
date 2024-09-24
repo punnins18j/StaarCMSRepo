@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 import com.pabb.staarcms.genericutility.BaseClass;
@@ -39,20 +40,23 @@ public class ModifyThirdPartyTest extends BaseClass {
 		ListOfThirdPartiesPage lp = new ListOfThirdPartiesPage(driver);
 		ModifyThirdPartyPage mtp = new ModifyThirdPartyPage(driver);
 		
+		/* create object of soft assert class*/
+		SoftAssert sa = new SoftAssert();
+		
 		UtilityClassObject.getTest().log(Status.INFO, " User is able to open the browser and login to the application");
 
 		/*click on Third-parties major tab */
 		h.getThirdPartyTab().click();
 		String eTitleTpMajorTab = eLib.getDataFromExcelFile("PageTitles", 1, 1);
 		String aTitleTpMajorTab = driver.getTitle();
-		Assert.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
+		sa.assertEquals(aTitleTpMajorTab,eTitleTpMajorTab);
 		
 		
 		/*click on New Third Party link*/
 		tp.getNewThirdPartyLink().click();
 		String eTitleNewTpLink = eLib.getDataFromExcelFile("PageTitles", 2, 1);
 		String aTitleNewTpLink = driver.getTitle();
-		Assert.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
+		sa.assertEquals(eTitleNewTpLink,aTitleNewTpLink);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to  New Third-party page ");
 
@@ -72,7 +76,7 @@ public class ModifyThirdPartyTest extends BaseClass {
 		
 		String eTitleTpDetailsPage = tpName+eLib.getDataFromExcelFile("PageTitles", 3, 1);
 		String aTitleTpDetailsPage = driver.getTitle();
-		Assert.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
+		sa.assertEquals(aTitleTpDetailsPage,eTitleTpDetailsPage);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Navigate to List of all Third-parties page");
 
@@ -82,7 +86,7 @@ public class ModifyThirdPartyTest extends BaseClass {
 		/*Get the page title of List page from excel and Assert*/
 		String eTitleList = eLib.getDataFromExcelFile("PageTitles", 4, 1);
 		String aTitleList = driver.getTitle();
-		Assert.assertEquals(aTitleList,eTitleList);
+		sa.assertEquals(aTitleList,eTitleList);
 		
 		UtilityClassObject.getTest().log(Status.INFO, "Enter Third-party name in filters and search Third-party");
 
@@ -90,7 +94,7 @@ public class ModifyThirdPartyTest extends BaseClass {
 		lp.searchThirdParty(tpName);
 		
 		String aTpNameInList = lp.getTpNameInList().getText();
-		Assert.assertEquals(tpName, aTpNameInList);
+		sa.assertEquals(tpName, aTpNameInList);
 		
 		/* click on Third-party Name from the list */
 		lp.getTpNameInList().click();
@@ -103,7 +107,7 @@ public class ModifyThirdPartyTest extends BaseClass {
 		/*Get the page title of Third-party Modify page from excel and Assert*/
 		String eTitleModify = tpName+eLib.getDataFromExcelFile("PageTitles", 3, 1);
 		String aTitleModify = driver.getTitle();
-		Assert.assertEquals(aTitleModify,eTitleModify);
+		sa.assertEquals(aTitleModify,eTitleModify);
 		
 		/* Change the status to Closed and Save */
 		String statusModified = eLib.getDataFromExcelFile("ThirdParty", 1, 4);
@@ -113,6 +117,7 @@ public class ModifyThirdPartyTest extends BaseClass {
 		/* Modify the details needed */
 		mtp.getSaveBtn();
 		
-		Assert.assertTrue(tdp.getStatusText().isDisplayed());
+		sa.assertTrue(tdp.getStatusText().isDisplayed());
+		sa.assertAll();
 	}
 }

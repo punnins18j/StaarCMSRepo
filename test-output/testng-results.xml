@@ -20,47 +20,47 @@
       <![CDATA[=== Close DB Connection and Report BackUp ===]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-23T17:56:14 IST" name="Default suite" finished-at="2024-09-23T17:56:43 IST" duration-ms="29072">
+  <suite started-at="2024-09-24T10:32:00 IST" name="Default suite" finished-at="2024-09-24T10:32:28 IST" duration-ms="28470">
     <groups>
       <group name="regressionTest">
-        <method signature="CreateProposalAndRejectTest.createProposalAndReject()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" name="createProposalAndReject" class="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest"/>
+        <method signature="CreateShipmentAndModifyTest.createShipmentAndModifyTest()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" name="createShipmentAndModifyTest" class="com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest"/>
       </group> <!-- regressionTest -->
     </groups>
-    <test started-at="2024-09-23T17:56:14 IST" name="Default test" finished-at="2024-09-23T17:56:43 IST" duration-ms="29072">
-      <class name="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:14 IST" name="beforeSuite" finished-at="2024-09-23T17:56:14 IST" duration-ms="6" status="PASS">
+    <test started-at="2024-09-24T10:32:00 IST" name="Default test" finished-at="2024-09-24T10:32:28 IST" duration-ms="28470">
+      <class name="com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" started-at="2024-09-24T10:32:00 IST" name="beforeSuite" finished-at="2024-09-24T10:32:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=== Connect to DB and Report Config ===]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:14 IST" name="beforeClass" finished-at="2024-09-23T17:56:19 IST" duration-ms="4668" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" started-at="2024-09-24T10:32:00 IST" name="beforeClass" finished-at="2024-09-24T10:32:03 IST" duration-ms="3640" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[== Open Browser ==]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:19 IST" name="beforeMethod" finished-at="2024-09-23T17:56:20 IST" duration-ms="732" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" started-at="2024-09-24T10:32:03 IST" name="beforeMethod" finished-at="2024-09-24T10:32:04 IST" duration-ms="567" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[= login =]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createProposalAndReject()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:20 IST" name="createProposalAndReject" finished-at="2024-09-23T17:56:43 IST" duration-ms="23162" status="FAIL">
+        <test-method signature="createShipmentAndModifyTest()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" started-at="2024-09-24T10:32:04 IST" name="createShipmentAndModifyTest" finished-at="2024-09-24T10:32:27 IST" duration-ms="22953" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.pabb.staarcms.commercetest.CreateProposalAndRejectTest.createProposalAndReject(CreateProposalAndRejectTest.java:144)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest.createShipmentAndModifyTest(CreateShipmentAndModifyTest.java:303)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,28 +94,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createProposalAndReject -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:43 IST" name="afterMethod" finished-at="2024-09-23T17:56:43 IST" duration-ms="346" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        </test-method> <!-- createShipmentAndModifyTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" started-at="2024-09-24T10:32:27 IST" name="afterMethod" finished-at="2024-09-24T10:32:28 IST" duration-ms="1104" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Element <span class="hideonsmartphone"> could not be scrolled into view
+              <![CDATA[element click intercepted: Element <span class="hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft">...</span> is not clickable at point (1450, 26). Other element would receive the click: <div>...</div>
+  (Session info: chrome=128.0.6613.138)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7a4769df-679e-4671-ad77-5da11507d28b, clickElement {id=de67c509-040d-4962-87a5-d82b50327895}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:29908, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 37428, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (7a4769df-679e-4671-ad77-5da11507d28b)] -> xpath: //span[text()='Logout']]
-Session ID: 7a4769df-679e-4671-ad77-5da11507d28b]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72659c4bcac8673da0e836e8a2e992da, clickElement {id=f.B115FC9DC964ECA039097531F683EDFB.d.2A3BCC59D880882C7DBC5FBDC8058261.e.938}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62916/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (72659c4bcac8673da0e836e8a2e992da)] -> xpath: //span[@class='hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft']]
+Session ID: 72659c4bcac8673da0e836e8a2e992da]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span class="hideonsmartphone"> could not be scrolled into view
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft">...</span> is not clickable at point (1450, 26). Other element would receive the click: <div>...</div>
+  (Session info: chrome=128.0.6613.138)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7a4769df-679e-4671-ad77-5da11507d28b, clickElement {id=de67c509-040d-4962-87a5-d82b50327895}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:29908, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 37428, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (7a4769df-679e-4671-ad77-5da11507d28b)] -> xpath: //span[text()='Logout']]
-Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72659c4bcac8673da0e836e8a2e992da, clickElement {id=f.B115FC9DC964ECA039097531F683EDFB.d.2A3BCC59D880882C7DBC5FBDC8058261.e.938}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62916/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (72659c4bcac8673da0e836e8a2e992da)] -> xpath: //span[@class='hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft']]
+Session ID: 72659c4bcac8673da0e836e8a2e992da
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -135,7 +137,7 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:108)
+at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:107)
 at com.pabb.staarcms.genericutility.BaseClass.afterMethod(BaseClass.java:90)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -172,25 +174,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
             <line>
               <![CDATA[= logout =]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:43 IST" name="afterClass" finished-at="2024-09-23T17:56:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" started-at="2024-09-24T10:32:28 IST" name="afterClass" finished-at="2024-09-24T10:32:28 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:43 IST" name="afterSuite" finished-at="2024-09-23T17:56:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@740cae06]" started-at="2024-09-24T10:32:28 IST" name="afterSuite" finished-at="2024-09-24T10:32:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=== Close DB Connection and Report BackUp ===]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.pabb.staarcms.commercetest.CreateProposalAndRejectTest -->
+      </class> <!-- com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
