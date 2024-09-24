@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest">
+      <class name="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
           <include name="afterClass"/>
-          <include name="modifyThirdPartyTest"/>
           <include name="beforeSuite"/>
+          <include name="createProposalAndReject"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest -->
+      </class> <!-- com.pabb.staarcms.commercetest.CreateProposalAndRejectTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

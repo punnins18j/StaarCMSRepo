@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class CommerceAreaPage {
 	
-	@FindBy(linkText = "New proposal")
+	@FindBy(xpath = "//a[text()='New proposal']")
 	private WebElement newProposalLink;
 	
 	@FindBy(xpath = "//div[@class='menu_contenu menu_contenu_comm_propal_list']/a")
@@ -20,7 +20,7 @@ public class CommerceAreaPage {
 	@FindBy(xpath="//div[@class='menu_contenu menu_contenu_comm_propal_stats_index']/a")
 	private WebElement propStatisticsLink;
 	
-	@FindBy(linkText = "New order")
+	@FindBy(xpath = "//a[text()='New order']")
 	private WebElement newOrderLink;
 	
 	@FindBy(xpath = "//div[@class='menu_contenu menu_contenu_commande_list']/a")

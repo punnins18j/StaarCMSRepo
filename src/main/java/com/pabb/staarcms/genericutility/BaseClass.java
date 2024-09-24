@@ -8,6 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import com.pabb.staarcms.fileutility.*;
 import com.pabb.staarcms.objectrepository.HomePage;
 import com.pabb.staarcms.objectrepository.LoginPage;
@@ -40,10 +41,11 @@ public class BaseClass {
 	 * 
 	 * @throws Exception
 	 */
-
+	// @Parameters("browser")
 	@BeforeClass(groups = { "smokeTest", "regressionTest" })
-	public void beforeClass() throws Exception {
-
+	public void beforeClass(/* String browser */) throws Exception {
+		
+		Reporter.log("== Open Browser ==", true);
 		String browser = System.getProperty("browser", fLib.getDataFromPropertiesFile("browser"));
 		String url = System.getProperty("url", fLib.getDataFromPropertiesFile("url"));
 

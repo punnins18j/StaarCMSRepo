@@ -42,6 +42,14 @@ public class WebDriverUtility {
 		driver.manage().window().maximize();
 	}
 
+	/**
+	 * 
+	 * @param driver
+	 * @param browser
+	 * @return
+	 * 
+	 * This Method is used to Get the Browser
+	 */
 	public WebDriver getBrowser(WebDriver driver, String browser) {
 		browser = browser.toLowerCase();
 
@@ -69,7 +77,15 @@ public class WebDriverUtility {
 
 		return driver;
 	}
-
+	
+	/**
+	 * 
+	 * @param driver
+	 * @param name
+	 * @throws IOException
+	 * 
+	 * This Method is used to take the screenshot 
+	 */
 	public void getScreenShot(WebDriver driver, String name) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
@@ -77,55 +93,123 @@ public class WebDriverUtility {
 		FileUtils.copyFile(src, dest);
 	}
 	
+	/**
+	 * 
+	 * @param driver
+	 * @param url
+	 * 
+	 * This Method is used to enter the url in the browser
+	 */
 	public void get(WebDriver driver, String url)
 	{
 		driver.get(url);
 	}
-
+	
+	/**
+	 * 
+	 * @param element
+	 * @param index
+	 * 
+	 * This Method is used perform Select By index action on a select box
+	 */
 	public void selectByIndex(WebElement element, int index) {
 		Select s = new Select(element);
 		s.selectByIndex(index);
 	}
 
+	/**
+	 * 
+	 * @param element
+	 * @param value
+	 * 
+	 * This Method is used perform Select By Value action on a select box
+	 */
 	public void selectByValue(WebElement element, String value) {
 		Select s = new Select(element);
 		s.selectByValue(value);
 	}
 
+	/**
+	 * 
+	 * @param element
+	 * @param value
+	 * 
+	 * This Method is used perform Select By Visible text action on a select box
+	 */
 	public void selectByVisibleText(WebElement element, String text) {
 		Select s = new Select(element);
 		s.selectByVisibleText(text);
 	}
 
+	/**
+	 * 
+	 * @param element
+	 * @param index
+	 * 
+	 * This method is used to deselect by index
+	 */
 	public void deSelectByIndex(WebElement element, int index) {
 		Select s = new Select(element);
 		if (s.isMultiple())
 			s.deselectByIndex(index);
 	}
-
+	
+	/**
+	 * 
+	 * @param element
+	 * @param value
+	 * 
+	 * This Method is used to deselect by value
+	 */
 	public void deSelectByValue(WebElement element, String value) {
 		Select s = new Select(element);
 		if (s.isMultiple())
 			s.deselectByValue(value);
 	}
 
+	/**
+	 * 
+	 * @param element
+	 * @param text
+	 * 
+	 * Thid Method is used to deselect all options 
+	 */
 	public void deSelectAll(WebElement element, String text) {
 		Select s = new Select(element);
 		if (s.isMultiple())
 			s.deselectByVisibleText(text);
 	}
-
+	/**
+	 * 
+	 * @param element
+	 * @return
+	 * 
+	 * This Method is used to get All options of a select box
+	 */
 	public List<WebElement> getOptions(WebElement element) {
 		Select s = new Select(element);
 		List<WebElement> allOptions = s.getOptions();
 		return allOptions;
 	}
-
+	
+	/**
+	 * 
+	 * @param driver
+	 * @param element
+	 * 
+	 * This Method is used to move a mouse pointer to specified Web element
+	 */
 	public void moveToElement(WebDriver driver, WebElement element) {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).build().perform();
 	}
 	
+	/**
+	 * 
+	 * @param driver
+	 * 
+	 * This method is used to handle Alert popup
+	 */
 	public void handleAlertPopup(WebDriver driver)
 	{
 		Alert a = driver.switchTo().alert();

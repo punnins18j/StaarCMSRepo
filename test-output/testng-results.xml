@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="14" total="22" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[ Report config ]]>
@@ -8,213 +8,59 @@
       <![CDATA[=== Connect to DB and Report Config ===]]>
     </line>
     <line>
-      <![CDATA[= login =]]>
-    </line>
-    <line>
-      <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[=== Close Browser ===]]>
+      <![CDATA[== Open Browser ==]]>
     </line>
     <line>
       <![CDATA[= login =]]>
     </line>
     <line>
       <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[=== Close Browser ===]]>
-    </line>
-    <line>
-      <![CDATA[= login =]]>
-    </line>
-    <line>
-      <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[= login =]]>
-    </line>
-    <line>
-      <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[=== Close Browser ===]]>
-    </line>
-    <line>
-      <![CDATA[= login =]]>
-    </line>
-    <line>
-      <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[=== Close Browser ===]]>
-    </line>
-    <line>
-      <![CDATA[= login =]]>
-    </line>
-    <line>
-      <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[=== Close Browser ===]]>
-    </line>
-    <line>
-      <![CDATA[= login =]]>
-    </line>
-    <line>
-      <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[=== Close Browser ===]]>
-    </line>
-    <line>
-      <![CDATA[= login =]]>
-    </line>
-    <line>
-      <![CDATA[= logout =]]>
-    </line>
-    <line>
-      <![CDATA[=== Close Browser ===]]>
     </line>
     <line>
       <![CDATA[=== Close DB Connection and Report BackUp ===]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-23T15:32:52 IST" name="Suite" finished-at="2024-09-23T15:34:49 IST" duration-ms="116656">
+  <suite started-at="2024-09-23T17:56:14 IST" name="Default suite" finished-at="2024-09-23T17:56:43 IST" duration-ms="29072">
     <groups>
       <group name="regressionTest">
-        <method signature="CreateProposalAndRejectTest.createProposalAndReject()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@470734c3]" name="createProposalAndReject" class="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest"/>
-        <method signature="CreateSalesOrderAndValidateTest.createSalesOrderAndValidate()[pri:0, instance:com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest@74ea2410]" name="createSalesOrderAndValidate" class="com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest"/>
-        <method signature="VerifyListOfProposalsTest.verifyListOfProposalsInTheDraftStageTest()[pri:0, instance:com.pabb.staarcms.commercetest.VerifyListOfProposalsTest@25ce9dc4]" name="verifyListOfProposalsInTheDraftStageTest" class="com.pabb.staarcms.commercetest.VerifyListOfProposalsTest"/>
-        <method signature="CreateShipmentAndModifyTest.createShipmentAndModifyTest()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@2cf3d63b]" name="createShipmentAndModifyTest" class="com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest"/>
-        <method signature="CreateThirdPartyAsCustomerSmokeTest.createThirdPartyWithMandatoryFieldsTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest@7674f035]" name="createThirdPartyWithMandatoryFieldsTest" class="com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest"/>
-        <method signature="ListOfThirdPartiesTest.listOfAllThirdPartiesSmokeTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest@173ed316]" name="listOfAllThirdPartiesSmokeTest" class="com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest"/>
-        <method signature="ModifyThirdPartyTest.modifyThirdPartyTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" name="modifyThirdPartyTest" class="com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest"/>
-        <method signature="VerifyThirdPartyInListTest.verifyThirdPartyTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest@69e153c5]" name="verifyThirdPartyTest" class="com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest"/>
+        <method signature="CreateProposalAndRejectTest.createProposalAndReject()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" name="createProposalAndReject" class="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest"/>
       </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="CreateThirdPartyAsCustomerSmokeTest.createThirdPartyWithMandatoryFieldsTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest@7674f035]" name="createThirdPartyWithMandatoryFieldsTest" class="com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest"/>
-        <method signature="ListOfThirdPartiesTest.listOfAllThirdPartiesSmokeTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest@173ed316]" name="listOfAllThirdPartiesSmokeTest" class="com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2024-09-23T15:32:52 IST" name="Test" finished-at="2024-09-23T15:34:49 IST" duration-ms="116656">
-      <class name="com.pabb.staarcms.commercetest.VerifyListOfProposalsTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.commercetest.VerifyListOfProposalsTest@25ce9dc4]" started-at="2024-09-23T15:34:21 IST" name="beforeClass" finished-at="2024-09-23T15:34:24 IST" duration-ms="3199" status="PASS">
+    <test started-at="2024-09-23T17:56:14 IST" name="Default test" finished-at="2024-09-23T17:56:43 IST" duration-ms="29072">
+      <class name="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:14 IST" name="beforeSuite" finished-at="2024-09-23T17:56:14 IST" duration-ms="6" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[=== Connect to DB and Report Config ===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:14 IST" name="beforeClass" finished-at="2024-09-23T17:56:19 IST" duration-ms="4668" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[== Open Browser ==]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.commercetest.VerifyListOfProposalsTest@25ce9dc4]" started-at="2024-09-23T15:34:24 IST" name="beforeMethod" finished-at="2024-09-23T15:34:26 IST" duration-ms="1183" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:19 IST" name="beforeMethod" finished-at="2024-09-23T17:56:20 IST" duration-ms="732" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[= login =]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyListOfProposalsInTheDraftStageTest()[pri:0, instance:com.pabb.staarcms.commercetest.VerifyListOfProposalsTest@25ce9dc4]" started-at="2024-09-23T15:34:26 IST" name="verifyListOfProposalsInTheDraftStageTest" finished-at="2024-09-23T15:34:31 IST" duration-ms="5379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyListOfProposalsInTheDraftStageTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.commercetest.VerifyListOfProposalsTest@25ce9dc4]" started-at="2024-09-23T15:34:31 IST" name="afterMethod" finished-at="2024-09-23T15:34:31 IST" duration-ms="484" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= logout =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.commercetest.VerifyListOfProposalsTest@25ce9dc4]" started-at="2024-09-23T15:34:31 IST" name="afterClass" finished-at="2024-09-23T15:34:32 IST" duration-ms="439" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Close Browser ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pabb.staarcms.commercetest.VerifyListOfProposalsTest -->
-      <class name="com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest@69e153c5]" started-at="2024-09-23T15:33:59 IST" name="beforeClass" finished-at="2024-09-23T15:34:05 IST" duration-ms="5422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest@69e153c5]" started-at="2024-09-23T15:34:05 IST" name="beforeMethod" finished-at="2024-09-23T15:34:06 IST" duration-ms="1695" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= login =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyThirdPartyTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest@69e153c5]" started-at="2024-09-23T15:34:06 IST" name="verifyThirdPartyTest" finished-at="2024-09-23T15:34:11 IST" duration-ms="4307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThirdPartyTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest@69e153c5]" started-at="2024-09-23T15:34:11 IST" name="afterMethod" finished-at="2024-09-23T15:34:11 IST" duration-ms="547" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= logout =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest@69e153c5]" started-at="2024-09-23T15:34:11 IST" name="afterClass" finished-at="2024-09-23T15:34:12 IST" duration-ms="472" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Close Browser ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest -->
-      <class name="com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest@173ed316]" started-at="2024-09-23T15:34:12 IST" name="beforeClass" finished-at="2024-09-23T15:34:14 IST" duration-ms="2317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest@173ed316]" started-at="2024-09-23T15:34:14 IST" name="beforeMethod" finished-at="2024-09-23T15:34:19 IST" duration-ms="4562" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= login =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="listOfAllThirdPartiesSmokeTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest@173ed316]" started-at="2024-09-23T15:34:19 IST" name="listOfAllThirdPartiesSmokeTest" finished-at="2024-09-23T15:34:20 IST" duration-ms="1606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- listOfAllThirdPartiesSmokeTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest@173ed316]" started-at="2024-09-23T15:34:20 IST" name="afterMethod" finished-at="2024-09-23T15:34:21 IST" duration-ms="488" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= logout =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest@173ed316]" started-at="2024-09-23T15:34:21 IST" name="afterClass" finished-at="2024-09-23T15:34:21 IST" duration-ms="404" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Close Browser ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest -->
-      <class name="com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@2cf3d63b]" started-at="2024-09-23T15:33:21 IST" name="beforeClass" finished-at="2024-09-23T15:33:25 IST" duration-ms="3973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@2cf3d63b]" started-at="2024-09-23T15:33:25 IST" name="beforeMethod" finished-at="2024-09-23T15:33:27 IST" duration-ms="1394" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= login =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="createShipmentAndModifyTest()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@2cf3d63b]" started-at="2024-09-23T15:33:27 IST" name="createShipmentAndModifyTest" finished-at="2024-09-23T15:33:49 IST" duration-ms="22110" status="FAIL">
+        <test-method signature="createProposalAndReject()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:20 IST" name="createProposalAndReject" finished-at="2024-09-23T17:56:43 IST" duration-ms="23162" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest.createShipmentAndModifyTest(CreateShipmentAndModifyTest.java:297)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.pabb.staarcms.commercetest.CreateProposalAndRejectTest.createProposalAndReject(CreateProposalAndRejectTest.java:144)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -248,30 +94,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createShipmentAndModifyTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@2cf3d63b]" started-at="2024-09-23T15:33:49 IST" name="afterMethod" finished-at="2024-09-23T15:33:50 IST" duration-ms="1170" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- createProposalAndReject -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:43 IST" name="afterMethod" finished-at="2024-09-23T17:56:43 IST" duration-ms="346" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[element click intercepted: Element <span class="hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft">...</span> is not clickable at point (1450, 26). Other element would receive the click: <div>...</div>
-  (Session info: chrome=128.0.6613.138)
+              <![CDATA[Element <span class="hideonsmartphone"> could not be scrolled into view
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3dc2541129a128bdd0f053a993a849cb, clickElement {id=f.64390DC570D045E7D26EF9673C8313F3.d.ED18904C16160E02F5D6BF18CF107BD7.e.883}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58795/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3dc2541129a128bdd0f053a993a849cb)] -> xpath: //span[@class='hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft']]
-Session ID: 3dc2541129a128bdd0f053a993a849cb]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7a4769df-679e-4671-ad77-5da11507d28b, clickElement {id=de67c509-040d-4962-87a5-d82b50327895}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:29908, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 37428, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7a4769df-679e-4671-ad77-5da11507d28b)] -> xpath: //span[text()='Logout']]
+Session ID: 7a4769df-679e-4671-ad77-5da11507d28b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft">...</span> is not clickable at point (1450, 26). Other element would receive the click: <div>...</div>
-  (Session info: chrome=128.0.6613.138)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span class="hideonsmartphone"> could not be scrolled into view
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3dc2541129a128bdd0f053a993a849cb, clickElement {id=f.64390DC570D045E7D26EF9673C8313F3.d.ED18904C16160E02F5D6BF18CF107BD7.e.883}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58795/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3dc2541129a128bdd0f053a993a849cb)] -> xpath: //span[@class='hidden-xs maxwidth200 atoploginusername hideonsmartphone paddingleft']]
-Session ID: 3dc2541129a128bdd0f053a993a849cb
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7a4769df-679e-4671-ad77-5da11507d28b, clickElement {id=de67c509-040d-4962-87a5-d82b50327895}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:29908, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 37428, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7a4769df-679e-4671-ad77-5da11507d28b)] -> xpath: //span[text()='Logout']]
+Session ID: 7a4769df-679e-4671-ad77-5da11507d28b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -291,8 +135,8 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:107)
-at com.pabb.staarcms.genericutility.BaseClass.afterMethod(BaseClass.java:88)
+at com.pabb.staarcms.objectrepository.HomePage.setLogOut(HomePage.java:108)
+at com.pabb.staarcms.genericutility.BaseClass.afterMethod(BaseClass.java:90)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -328,156 +172,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
             <line>
               <![CDATA[= logout =]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest@2cf3d63b]" started-at="2024-09-23T15:33:50 IST" name="afterClass" finished-at="2024-09-23T15:33:50 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:43 IST" name="afterClass" finished-at="2024-09-23T17:56:43 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest -->
-      <class name="com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" started-at="2024-09-23T15:32:52 IST" name="beforeSuite" finished-at="2024-09-23T15:32:52 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Connect to DB and Report Config ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" started-at="2024-09-23T15:32:52 IST" name="beforeClass" finished-at="2024-09-23T15:32:56 IST" duration-ms="3985" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" started-at="2024-09-23T15:32:56 IST" name="beforeMethod" finished-at="2024-09-23T15:32:57 IST" duration-ms="1059" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= login =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="modifyThirdPartyTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" started-at="2024-09-23T15:32:57 IST" name="modifyThirdPartyTest" finished-at="2024-09-23T15:33:03 IST" duration-ms="6229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyThirdPartyTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" started-at="2024-09-23T15:33:03 IST" name="afterMethod" finished-at="2024-09-23T15:33:04 IST" duration-ms="658" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= logout =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" started-at="2024-09-23T15:33:04 IST" name="afterClass" finished-at="2024-09-23T15:33:04 IST" duration-ms="494" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Close Browser ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest@1530c739]" started-at="2024-09-23T15:34:49 IST" name="afterSuite" finished-at="2024-09-23T15:34:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@740cae06]" started-at="2024-09-23T17:56:43 IST" name="afterSuite" finished-at="2024-09-23T17:56:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=== Close DB Connection and Report BackUp ===]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest -->
-      <class name="com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest@7674f035]" started-at="2024-09-23T15:33:50 IST" name="beforeClass" finished-at="2024-09-23T15:33:54 IST" duration-ms="3645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest@7674f035]" started-at="2024-09-23T15:33:54 IST" name="beforeMethod" finished-at="2024-09-23T15:33:55 IST" duration-ms="1353" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= login =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="createThirdPartyWithMandatoryFieldsTest()[pri:0, instance:com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest@7674f035]" started-at="2024-09-23T15:33:55 IST" name="createThirdPartyWithMandatoryFieldsTest" finished-at="2024-09-23T15:33:58 IST" duration-ms="3316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createThirdPartyWithMandatoryFieldsTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest@7674f035]" started-at="2024-09-23T15:33:58 IST" name="afterMethod" finished-at="2024-09-23T15:33:59 IST" duration-ms="496" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= logout =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest@7674f035]" started-at="2024-09-23T15:33:59 IST" name="afterClass" finished-at="2024-09-23T15:33:59 IST" duration-ms="482" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Close Browser ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest -->
-      <class name="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@470734c3]" started-at="2024-09-23T15:33:04 IST" name="beforeClass" finished-at="2024-09-23T15:33:08 IST" duration-ms="3166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@470734c3]" started-at="2024-09-23T15:33:08 IST" name="beforeMethod" finished-at="2024-09-23T15:33:09 IST" duration-ms="1470" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= login =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="createProposalAndReject()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@470734c3]" started-at="2024-09-23T15:33:09 IST" name="createProposalAndReject" finished-at="2024-09-23T15:33:20 IST" duration-ms="11008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProposalAndReject -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@470734c3]" started-at="2024-09-23T15:33:20 IST" name="afterMethod" finished-at="2024-09-23T15:33:21 IST" duration-ms="570" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= logout =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateProposalAndRejectTest@470734c3]" started-at="2024-09-23T15:33:21 IST" name="afterClass" finished-at="2024-09-23T15:33:21 IST" duration-ms="464" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Close Browser ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
       </class> <!-- com.pabb.staarcms.commercetest.CreateProposalAndRejectTest -->
-      <class name="com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest@74ea2410]" started-at="2024-09-23T15:34:32 IST" name="beforeClass" finished-at="2024-09-23T15:34:35 IST" duration-ms="3285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest@74ea2410]" started-at="2024-09-23T15:34:35 IST" name="beforeMethod" finished-at="2024-09-23T15:34:36 IST" duration-ms="1037" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= login =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="createSalesOrderAndValidate()[pri:0, instance:com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest@74ea2410]" started-at="2024-09-23T15:34:36 IST" name="createSalesOrderAndValidate" finished-at="2024-09-23T15:34:48 IST" duration-ms="11343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createSalesOrderAndValidate -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest@74ea2410]" started-at="2024-09-23T15:34:48 IST" name="afterMethod" finished-at="2024-09-23T15:34:48 IST" duration-ms="664" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[= logout =]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest@74ea2410]" started-at="2024-09-23T15:34:48 IST" name="afterClass" finished-at="2024-09-23T15:34:49 IST" duration-ms="486" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=== Close Browser ===]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

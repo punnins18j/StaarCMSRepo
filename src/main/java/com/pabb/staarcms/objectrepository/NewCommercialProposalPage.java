@@ -18,7 +18,7 @@ public class NewCommercialProposalPage {
 	@FindBy(xpath="//input[@class='select2-search__field']")
 	private WebElement thirdPartyName;
 	
-	@FindBy(name="save")
+	@FindBy(xpath="//input[@name='save']")
 	private WebElement createDraftBtn;
 	
 	public NewCommercialProposalPage(WebDriver driver)

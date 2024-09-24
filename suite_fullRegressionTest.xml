@@ -4,20 +4,13 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="com.pabb.staarcms.thirdpartytest.ModifyThirdPartyTest" />
-			<class
-				name="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest" />
-			<class
-				name="com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest" />
-			<class
-				name="com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest" />
-			<class
-				name="com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest" />
-			<class
-				name="com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest" />
-			<class
-				name="com.pabb.staarcms.commercetest.VerifyListOfProposalsTest" />
-			<class
-				name="com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest" />
+			<class name="com.pabb.staarcms.commercetest.CreateProposalAndRejectTest" />
+			<class name="com.pabb.staarcms.servicestest.CreateShipmentAndModifyTest" />
+			<class name="com.pabb.staarcms.thirdpartytest.CreateThirdPartyAsCustomerSmokeTest" />
+			<class name="com.pabb.staarcms.thirdpartytest.VerifyThirdPartyInListTest" />
+			<class name="com.pabb.staarcms.thirdpartytest.ListOfThirdPartiesTest" />
+			<class name="com.pabb.staarcms.commercetest.VerifyListOfProposalsTest" />
+			<class name="com.pabb.staarcms.commercetest.CreateSalesOrderAndValidateTest" />
 		</classes>
 	</test> <!--Test -->
 </suite> <!--Suite -->
